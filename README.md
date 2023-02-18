@@ -45,19 +45,22 @@ rspec spec/requests/employees_spec.rb
 Response
 
 {
-   "previous_page": 29,
-   "next_page": 31,
-   "employees": [
+  "employees": [
     {
-      "fullname": "Natalya Bosco",
-      "e_number": 2670863397,
-      "created_at": "2023-02-17T18:44:16.243Z"
-     },
-     {
-      "fullname": "Morgan Stoltenberg",
-       "e_number": 5787876901,
-       "created_at": "2023-02-17T18:44:16.231Z"
-      }
+        "fullname": "Wen Wisoky",
+        "e_number": 5928523965,
+        "created_at": "2023-02-17T17:12:36.631Z"
+    },
+    {
+        "fullname": "Dustin Bins",
+        "e_number": 4206313448,
+        "created_at": "2023-02-17T17:12:36.630Z"
+    },
+    {
+        "fullname": "Amb. Jordon Rice",
+        "e_number": 6304244499,
+        "created_at": "2023-02-17T17:12:36.630Z"
+    },
   ]
 }
 ```

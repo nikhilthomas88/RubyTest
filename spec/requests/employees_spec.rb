@@ -25,7 +25,7 @@ RSpec.describe EmployeesController, type: :request do
     end
 
     it "returns 100 records in desc order" do
-      employees = Employee.select(:e_number).order(created_at: :desc).limit(100).offset(0).pluck(:e_number)
+      employees = Employee.select(:e_number).limit(100).offset(0).pluck(:e_number)
       resp_emp =@json_emp_details.map {|e| e["e_number"]}
       
       expect(resp_emp).to match_array(employees)

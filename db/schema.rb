@@ -14,11 +14,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_17_164205) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "employees", force: :cascade do |t|
+  create_table "employees", id: false, force: :cascade do |t|
     t.text "fullname"
     t.bigint "e_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "id"
+    t.index ["created_at"], name: "index_employees_on_created_at", order: :desc
     t.index ["e_number"], name: "index_employees_on_e_number", unique: true
   end
 

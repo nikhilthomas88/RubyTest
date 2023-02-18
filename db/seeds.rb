@@ -8,6 +8,6 @@ require 'faker'
 #   Character.create(name: "Luke", movie: movies.first)
 
 1000.times do
-	employees = 5000.times.map { |t| { fullname: Faker::Name.name,e_number:  Faker::Number.number(digits: 10),created_at: Time.now, updated_at: Time.now }}
-	Employee.insert_all(employees)
+  employees = 5000.times.map { |t| { fullname: Faker::Name.name,e_number:  Faker::Number.number(digits: 10),created_at: Time.now, updated_at: Time.now }}
+  Employee.insert_all(employees)
 end
